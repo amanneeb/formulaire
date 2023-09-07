@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="liaisons/css/styles.css">
+  <title>HTML5 - Structure sémantique</title>
+</head>
+
+<body>
+	<header class="header">
+	<img class="header__img" src="" alt="">
+	 <h1 class="header__titre">Faire un don</h1>
+	</header>
+
+	<main class="conteneur">
+		<form class="formulaire">
+                <fieldset class="don">
+                    <h2 class="don__titre">Don</h2>
+                    <h3 class="don__question">Quel type de don souhaitez-vous faire?</h3>
+                    <fieldset class="typeDon">
+
+                        <label class="typeDon__labelUnique" for="donUnique">Don unique</label>
+                        <input class="typeDon__inputUnique" type="radio" name="typeDon" id="donUnique">
+
+                        <label class="typeDon__labelMensuel" for="donMensuel">Don mensuel</label>
+                        <input class="typeDon__inputMensuel" type="radio" name="typeDon" id="donMensuel">
+
+                        <label class="typeDon__labelMemoriam" for="donMemoriam">Don in memoriam</label>
+                        <input class="typeDon__inputMemoriam" type="radio" name="typeDon" id="donMemoriam">
+                    </fieldset>
+
+                    <h3 class="don__question">Quel montant souhaitez-vous donner?</h3>
+                    <fieldset class="montantDon">
+
+                        <label class="montantDon__labelCinquante" for="cinquante">50$</label>
+                        <input type="radio" class="montantDon__inputCinquante" name="montantDon" id="cinquante">
+
+                        <label class="montantDon__labelCent" for="cent">100$</label>
+                        <input class="montantDon__inputCent" type="radio" name="montantDon" id="cent">
+
+                        <label class="montantDon__labelDeuxCents" for="deuxCents">200$</label>
+                        <input class="montantDon__inputDeuxCents" type="radio" name="montantDon" id="deuxCents">
+
+                        <label class="montantDon__labelCinqCents" for="cinqCents">500$</label>
+                        <input class="montantDon__inputCinqCents" type="radio" name="montantDon" id="cinqCents">
+
+                        <label class="montantDon__labelAutre" for="autre">Autre</label>
+                        <input class="montantDon__inputAutre" type="radio" name="montantDon" id="autre">
+
+                        <label class="montantDon__insertionDon" for="montantDon">Entrez le montant de votre don</label>
+                        <input class="montantDon__inputInsertionDon" type="text" id="montantDon"><span>$</span> <br>
+                    </fieldset>
+
+                    <input class="don__fraisAdminInput" type="checkbox" >
+                    <label class="don__fraisAdminLabel" for="">Je souhaite couvrir les frais d'administration de 3$.</label>
+
+                    <button class="" type="button">Passer à l'étape 2 >></button>
+                </fieldset><br>
+
+                <fieldset class="donateur">
+                    <h2 class="donateur__titre">Donateur</h2>
+                    <label class="donateur__individuLabel" for="individu">Individu</label>
+                    <input class="donateur__individuInput" type="radio" name="typeDonateur" id="individu">
+
+                    <label class="donateur__entrepriseLabel" for="entreprise">Entreprise</label>
+                    <input class="donateur__entrepriseInput" type="radio" name="typeDonateur" id="entreprise">
+
+                    <fieldset class="informationDonateur">
+                        <label class="informationDonateur__nomLabel" for="nom">Nom</label>
+                        <input class="informationDonateur__nomInput" type="text" name="" id="nom">
+
+                        <label class="informationDonateur__prenomLabel" for="prenom">Prénom</label>
+                        <input class="informationDonateur__prenomInput" type="text" name="" id="prenom">
+
+                        <label class="informationDonateur__courrielLabel" for="courriel">Courriel</label>
+                        <input class="informationDonateur__courrielInput" type="email" id="courriel">
+
+                        <label class="informationDonateur__confirmationLabel" for="confirmCourriel">Confirmation courriel</label>
+                        <input class="informationDonateur__confirmationInput" type="email" id="confirmCourriel">
+
+                        <fieldset class="donEntreprise">
+                            <label class="donEntreprise__titreLabel" for="titre">Titre</label>
+                            <input class="donEntreprise__titreInput" type="text" id="titre">
+
+                            <label class="donEntreprise__entrepriseLabel" for="entreprise">Entreprise</label>
+                            <input class="donEntreprise__entrepriseInput" type="text" id="entreprise">
+                        </fieldset>
+
+                        <label class="informationDonateur__adresseLabel" for="adresse">Adresse</label>
+                        <input class="informationDonateur__adresseInput" type="text" id="adresse">
+
+                        <label class="informationDonateur__paysLabel" for="pays">Pays</label>
+                        <select class="informationDonateur__paysSelect" id="pays">
+                            <option>Canada</option>
+                            <option>États-Unis</option>
+                            <option>France</option>
+                        </select>
+
+                        <label class="informationDonateur__provinceLabel" for="province">Province</label>
+                        <select class="informationDonateur__provinceSelect" id="province">
+                            <option>Québec</option>
+                            <option>Ontario</option>
+                            <option>Manitoba</option>
+                        </select>
+
+                        <label class="informationDonateur__codePostalLabel" for="codePostal">Code postal</label>
+                        <input class="informationDonateur__codePostalInput" type="text" for="codePostal">
+
+                        <label class="informationDonateur__villeLabel" for="ville">Ville</label>
+                        <input class="informationDonateur__villeLabel" type="text" id="ville">
+
+                        <label class="informationDonateur__typeTelLabel" for="typeTel">Type de téléphone</label>
+                        <select class="informationDonateur__typeTelSelect" id="typeTel">
+                            <option>Cellulaire</option>
+                            <option>Domicile</option>
+                            <option>Travail</option>
+                        </select>
+
+                        <label class="informationDonateur__numTelLabel" for="numTel">Numéro de téléphone</label>
+                        <input class="informationDonateur__numTelLabel" type="text" for="numTel"><br/>
+
+                        <input class="informationDonateur__nouvellesCheckbox" type="checkbox" id="nouvelles">
+                        <label class="informationDonateur__nouvellesLabel" for="nouvelles">Je souhaite recevoir les lettres de nouvelles de l'organisme.</label>
+
+                        <button type="button">Passer à l'étape 3 >></button>
+
+                    </fieldset>
+
+                </fieldset><br>
+
+                <fieldset class="paiement">
+                    <h2 class="paiement__titre">Paiement</h2>
+                    <label class="paiement__carteCreditLabel" for="carteCredit">Carte de crédit</label>
+                    <input class="paiement__carteCreditInput" type="radio" name="choixPaiement" id="carteCredit">
+
+                    <label class="paiement__paypal" for="paypal">Paypal</label>
+                    <input class="paiement__paypal" type="radio" name="choixPaiement" id="paypal">
+
+                    <label class="paiement__paypal" for="prelevement">Prélèvement bancaire</label>
+                    <input class="paiement__prelevementBancaire" type="radio" name="choixPaiement" id="prelevement">
+
+                    <fieldset class="carteCredit">
+                        <label class="carteCredit__nomLabel" for="nom">Nom</label>
+                        <input class="carteCredit__nomInput" type="text" id="nom">
+                        <p class="carteCredit__nomRetroaction"></p>
+                        <label class="carteCredit__numCarteLabel" for="numCarte">Numéro de la carte</label>
+                        <input class="carteCredit__numCarteInput" type="text" id="numCarte">
+                        <p class="carteCredit__numCarteRetroaction"></p>
+                        <label class="carteCredit__expirationLabel" for="expiration">Date d'expiration</label>
+                        <select class="carteCredit__expirationMoisSelect">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <select class="carteCredit__expirationAnneeSelect">
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                        </select>
+                        <p class="carteCredit__dateRetroaction"></p>
+                        <label class="carteCredit__cvvLabel" for="cvv">CVV</label>
+                        <input class="carteCredit__cvvInput" type="text">
+                        <p class="carteCredit__cvvRetroaction"></p>
+                        <label  class="carteCredit__codePostalLabel" for="codePostal">Code postal</label>
+                        <input class="carteCredit__codePostalInput" type="text" id="codePostal">
+                        <button type="button"><span></span>Payer</button>
+                    </fieldset>
+
+                    <fieldset class="paypal">
+                        <img class="paypal__img" src="" alt="paypal">
+                        <a class="paypal__lien" href="">Accédez à votre compte Paypal pour finaliser la transaction >></a>
+                    </fieldset>
+
+                    <fieldset class="prelevementBancaire">
+                        <label class="prelevementBancaire__banqueLabel" for="banque">Institution financière</label>
+                        <input class="prelevementBancaire__banqueInput" type="text" id="banque">
+                        <p class="prelevementBancaire__banqueInputRetroaction"></p>
+                        <label class="prelevementBancaire__numTransitLabel" for="numTransit">Numéro de transit</label>
+                        <input class="prelevementBancaire__numTransitInput" type="text" id="banque">
+                        <p class="prelevementBancaire__numTransitChoix"></p>
+                        <label class="prelevementBancaire__numBancaireLabel" for="numBancaire">Numéro d'institution</label>
+                        <input class="prelevementBancaire__numBancaireInput" type="text" id="banque">
+                         <p class="prelevementBancaire__numBancaireChoix"></p>
+                        <label class="prelevementBancaire__numCompteLabel" for="numCompte">Numéro de compte</label>
+                        <input class="prelevementBancaire__numCompteInput" type="text" id="banque">
+                         <p class="prelevementBancaire__numCompteChoix"></p>
+                        <img class="prelevementBancaire__specimen" src="" alt="desc">
+                        <button type="button"><span></span>Payer</button>
+                    </fieldset>
+
+                </fieldset><br>
+                <fieldset class="recapitulatif">
+                    <h2 class="recapitulatif__titre">Récapitulatif</h2>
+                    <fieldset class="recapDon">
+                        <h3 class="recapDon__titre">Don</h3>
+                        <p class="recapDon__typeDon">Quel type de don souhaitez-vous faire?</p>
+                        <p class="recapDon__typeDonChoix">Don unique</p>
+                        <p class="recapDon__montantDon">Quel montant souhaitez-vous donner?</p>
+                        <p class="recapDon__montantDonChoix">200$</p>
+                        <p class="recapDon__fraisAdmin">Je souhaite couvrir les frais d'administration de 3$</p>
+                        <p class="recapDon__fraisAdminChoix">Non</p>
+                    </fieldset>
+                    <fieldset class="recapDonateur">
+                        <h3 class="recapDonateur__titre">Donateur</h3>
+                        <p class="recapDonateur__nom">Nom</p>
+                        <p class="recapDonateur__nomChoix"></p>
+                        <p class="recapDonateur__prenom">Prénom</p>
+                        <p class="recapDonateur__prenomChoix"></p>
+                        <p class="recapDonateur__courriel">Courriel</p>
+                        <p class="recapDonateur__courrielChoix"></p>
+                        <p class="recapDonateur__adresse">Adresse</p>
+                        <p class="recapDonateur__adresseChoix"></p>
+                        <p class="recapDonateur__province">Province</p>
+                        <p class="recapDonateur__provinceChoix"></p>
+                        <p class="recapDonateur__codePostal">Code postal</p>
+                        <p class="recapDonateur__codePostalChoix"></p>
+                        <p class="recapDonateur__ville">Ville</p>
+                        <p class="recapDonateur__villeChoix"></p>
+                        <p class="recapDonateur__typeTel">Type de téléphone</p>
+                        <p class="recapDonateur__typeTelChoix"></p>
+                        <p class="recapDonateur__numTel">Numéro de téléphone</p>
+                        <p class="recapDonateur__numTelChoix"></p>
+                        <p class="recapDonateur__nouvelles">Je souhaite recevoir les lettres de nouvelles de l'organisme</p>
+                        <p class="recapDonateur__nouvellesChoix"></p>
+                    </fieldset>
+                    <fieldset class="recapPaiement">
+                        <h3 class="recapPaiement">Paiement</h3>
+                        <p class="recapPaiement__typePaiement">Type de paiement</p>
+                        <p class="recapPaiement__typePaiementChoix"></p>
+                        <p class="recapPaiement__banque">Institution financière</p>
+                        <p class="recapPaiement__banqueChoix"></p>
+                        <p class="recapPaiement__numTransit">Numéro de transit</p>
+                        <p class="recapPaiement__numTransitChoix"></p>
+                        <p class="recapPaiement__numBanque">Numéro d'institution</p>
+                        <p class="recapPaiement__numBanqueChoix"></p>
+                        <p class="recapPaiement__numCompte">Numéro de compte</p>
+                        <p class="recapPaiement__numCompteChoix"></p>
+                    </fieldset>
+                    <button type="button">Procéder au paiement</button>
+                </fieldset>
+            </form>
+
+	</main>
+
+	<aside>
+            <h3>Barre latérale</h3>
+            <p>Lorem ipsum dolor nunc aut nunquam sit amet, consectetur adipiscing elit. Vivamus at est eros, vel fringilla urna. Pellentesque odio rhoncus</p>
+	</aside>
+
+	<footer>
+		<h3>Pied de page</h3>
+		<p>Lorem ipsum dolor nunc aut nunquam sit amet, consectetur adipiscing elit. Vivamus at est eros, vel fringilla urna. Pellentesque odio rhoncus</p>
+	</footer>
+</body>
+
+</html>
